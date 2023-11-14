@@ -2,8 +2,11 @@ import Button from "../Button/Button"
 
 const Header = () => {
     return(
-        <header className='bg-indigo-700 text-white font-semibold text-xl py-10 flex px-20 justify-between'>
-        <nav className='max-w-screen-lg mx-auto flex gap-8'>
+        <header className='bg-indigo-800 text-white font-semibold text-xl py-8 mx-auto'>
+       <div className='max-w-screen-lg justify-between px-10 mx-auto flex'>
+      
+        <nav className='flex gap-8 justify-center items-center'>
+         
           <div>
             Список студентов
           </div>
@@ -15,9 +18,11 @@ const Header = () => {
           <div>
             Отзывы
           </div>
-          <Button title='Связаться с нами'/>
+          
         </nav>
-        
+        <Button title='Связаться с нами'/>
+           
+        </div>
        </header>
     )
 }

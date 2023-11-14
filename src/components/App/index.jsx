@@ -47,10 +47,13 @@ const [students, setStudents] = useState( [
     }
 
   return (
-    <div>
+    <div className=''>
          <Header />
          <div className='max-w-screen-lg mx-auto min-h-screen'>
-              {students.map((student) => {
+          {students.length === 0 && (
+          <div className='mt-20 text-center text-7xl text-gray-400 font-thin'>Нет студентов</div>
+          )}
+              {students.length > 0 && students.map ((student) => {
                 return(
                 <Student key={student.id} student={student} deleteStudent={deleteStudent}/>
                 )
