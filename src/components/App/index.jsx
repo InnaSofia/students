@@ -3,6 +3,7 @@ import Header from '../Header';
 import { useState } from 'react';
 import Student from '../Student';
 import Footer from '../Footer';
+import StudentForm from '../StudentForm';
 
 
 function App() {
@@ -47,9 +48,10 @@ const [students, setStudents] = useState( [
     }
 
   return (
-    <div className=''>
+    <div>
          <Header />
          <div className='max-w-screen-lg mx-auto min-h-screen'>
+          <StudentForm />
           {students.length === 0 && (
           <div className='mt-20 text-center text-7xl text-gray-400 font-thin'>Нет студентов</div>
           )}

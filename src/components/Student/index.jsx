@@ -8,7 +8,7 @@ const Student = (props) => {
                        <p className='text-2xl font-bold mt-4'>{student.fitstName} {student.lastName}</p>
                        <p>{student.age}</p>
 </div>
-<a className="hover:underline cursor-pointer" onClick={() => deleteStudent(student.id)}>Удалить</a>
+<button className="hover:underline cursor-pointer" onClick={() => deleteStudent(student.id)}>Удалить</button>
                  </div>
     )
 }
