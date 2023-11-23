@@ -47,11 +47,15 @@ const [students, setStudents] = useState( [
    setStudents(filteredStudents)
     }
 
+const addStudent = (student) => {
+  setStudents([...students, student]) 
+}
+
   return (
     <div>
          <Header />
          <div className='max-w-screen-lg mx-auto min-h-screen'>
-          <StudentForm />
+          <StudentForm addStudent={addStudent}/>
           {students.length === 0 && (
           <div className='mt-20 text-center text-7xl text-gray-400 font-thin'>Нет студентов</div>
           )}
