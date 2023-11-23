@@ -13,6 +13,9 @@ const [course, setCourse] = useState(courses[1])
 
     const handleClick = event => {
          event.preventDefault()
+
+
+         
         const student = {
             firstName, 
             lastName,
@@ -31,16 +34,16 @@ const [course, setCourse] = useState(courses[1])
         <div>
                 <form className="max-w-sm mx-10 gap-y-4 flex flex-col">
                     <h2 className="font-bold text-xl mb-5">Добавить нового студента</h2>
-                      <div className="grid grid-cols-3 gap-y-1 mb-5">
-                          <label className="col-span-1">Имя</label>
-                          <input
-                          onChange={(event) => setFirstName(event.target.value)} 
-                          value={firstName} 
-                          name="firstName" 
-                          type="text" 
-                          className="col-span-2 border border-solid border-gray-400 rounded"
-                          />
-                       </div>
+                    <div className="grid grid-cols-3 gap-y-1 mb-5">
+                         <label className="col-span-1">Имя</label>
+                         <input
+                         onChange={(event) => setFirstName(event.target.value)} 
+                         value={firstName}  
+                         name="firstName" 
+                         type="text" 
+                         className="col-span-2 border border-solid border-gray-400 rounded"
+                             />
+                    </div>
                     <div className="grid grid-cols-3 gap-y-1 mb-5">
                          <label className="col-span-1">Фамилия</label>
                          <input
