@@ -11,7 +11,7 @@ function App() {
 const [students, setStudents] = useState( [
     {
       id:1,
-      fitstName:'Анна',
+      firstName:'Анна',
       lastName:'Иванова',
       age:12,
       course:'Рисование'
@@ -19,7 +19,7 @@ const [students, setStudents] = useState( [
     },
     {
       id:2,
-      fitstName:'Кирил',
+      firstName:'Кирил',
       lastName:'Никитин',
       age:22,
       course:'Программирование'
@@ -27,7 +27,7 @@ const [students, setStudents] = useState( [
     },
     {
       id:3,
-      fitstName:'Ксения',
+      firstName:'Ксения',
       lastName:'Петрова',
       age:32,
       course:'Бухгалтер'
@@ -35,7 +35,7 @@ const [students, setStudents] = useState( [
     },
     {
       id:4,
-      fitstName:'Анна',
+      firstName:'Анна',
       lastName:'Серова',
       age:28,
       course:'Секретарь'
