@@ -1,4 +1,5 @@
 import Button from "../Button/Button"
+import { link } from "react-router-dom"
 
 const Header = () => {
     return(
@@ -7,17 +8,17 @@ const Header = () => {
       
         <nav className='flex gap-8 justify-center items-center'>
          
-          <div>
+          <link to='/students'>
             Список студентов
-          </div>
+          </link>
   
-          <div>
+          <link to='/contact'>
             Контакты
-          </div>
+          </link>
   
-          <div>
+          <link to='/reviews'>
             Отзывы
-          </div>
+          </link>
           
         </nav>
         <Button title='Связаться с нами'/>
