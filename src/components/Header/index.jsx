@@ -12,7 +12,7 @@ const Header = () => {
             Список студентов
           </link>
   
-          <link to='/contact'>
+          <link to='/contacts'>
             Контакты
           </link>
   

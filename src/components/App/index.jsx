@@ -1,9 +1,9 @@
-import Header from "components/Header"
-import Footer from "components/Footer"
-import StudentsPage from "components/StudentsPage"
-import HomePage from "components/HomePage"
-import ReviewsPage from "components/ReviewsPage"
-import ContactsPage from "components/ContactsPage"
+import Header from "../Header"
+import HomePage from "../HomePage"
+import ContactsPage from "../ContactsPage"
+import ReviewsPage from "../ReviewsPage"
+import StudentsPage from "../StudentsPage"
+import Footer from "../Footer"
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
 
@@ -13,7 +13,7 @@ function App() {
 
 
   return (
-    <div>
+  
     <BrowserRouter>
          <Header />
          <Routes>
@@ -24,7 +24,7 @@ function App() {
           </Routes>
          <Footer />
          </BrowserRouter>
-    </div>
+    
   );
 }
 
